@@ -2,10 +2,12 @@
 This project uses the concept of GAN's to create a Generator-Discriminator model that work on creating realistic looking human faces, with the training dataset being from the CelebA dataset.
 # Dataset
 The dataset used - https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5be7eb6f_processed-celeba-small/processed-celeba-small.zip
+
 It is made up of celebrity faces that are mostly white, but is definitely more complex than datasets like MNIST and SVHN
 # Model
 The model consists of a :-
 Generator - Takes random noise as input and produces fake images of size 32x32x3. We have used 4 convolutional layers with batch normalization in all layers except first one. ReLU activation function is used in first 3 layers and tanh acivation is used in the last layer.
+
 Discriminator - Main role is to distinguish between fake and real images. Takes a 32x32x3 image and gives output as real or fake. Our model has no maxpooling layers and is also using 4 convolutional layers with batch normalization except the first layer. Activation function used is Leaky ReLU.
 # Output
 
